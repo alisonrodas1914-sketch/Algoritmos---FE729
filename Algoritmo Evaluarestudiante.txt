@@ -1,0 +1,19 @@
+Algoritmo Evaluarestudiante
+	
+	Definir Nota_minima Como Entero
+	Definir Notafinal Como Real
+	Nota_minima<- 61
+	
+	Escribir "Ingrese la nota final: "
+	Leer Notafinal
+	
+	si Notafinal >= Nota_minima Entonces
+		Escribir "Aprobado"
+	SiNo
+		Escribir "Reprobado"
+	FinSi
+	
+	si Notafinal >= 90 Entonces
+		Escribir "Felicitaciones"
+	FinSi
+FinAlgoritmo

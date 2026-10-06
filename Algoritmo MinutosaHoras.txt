@@ -1,0 +1,23 @@
+Algoritmo MinutosaHoras
+	
+	//Prposito comvertir minutos a horas y restante 
+	//Declaracion de variables 
+	Definir Minutos como entero 
+	Definir Hora como Entero 
+	Definir Minutosrestantes Como Entero
+
+	
+	// Iniciacion
+	Hora = 60 
+	Minutos <- 130 
+	Escribir "Ingrese la cantidad de minutos que desea convertir a horas:"
+	Leer Minutos
+	
+	//Calculos
+	Hora<- Trunc(Minutos / 60) 
+	Minutosrestantes<- Minutos MOD 60 
+	
+	
+	//Resultados
+	Escribir Hora "Horas y", Minutosrestantes, Minutos
+FinAlgoritmo
