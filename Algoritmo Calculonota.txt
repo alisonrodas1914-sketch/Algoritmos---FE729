@@ -1,0 +1,23 @@
+Algoritmo Calculonota
+	//Universidad rural de Guatemala - Algoritmos FE729
+	// proposito: sumar dos parciales y el examen final 
+	// declaraciones variables 
+	
+	Definir Nota_minima como entero
+	Definir parcial1, parcail2, Examenfinal Como Real
+	Definir Aprobado como logico
+	//iniciacion 
+	Nota_minima <- 61 
+	Escribir "Primer parcial (0 a 30):"
+	Leer  parcial1
+	Escribir "segundo parcial (0 a 30):"
+	Leer parcail2
+	Escribir "Examen final (0 a 40):"
+	Leer Examenfinal
+	//Calculos 
+	notafinal <- parcial1 + parcail2 + Examenfinal
+	Aprobado <- notafinal >= Nota_minima
+	//Resultados
+	Escribir "Nota final:" , notafinal
+	Escribir "Aprobado: " , Aprobado
+FinAlgoritmo

@@ -1,2 +1,16 @@
-Hola mundo desde mi consola
-holis
+Algoritmo notasejemlplo
+	
+	Definir Nota1, Nota2, Nota3 Como real
+	Definir resultado Como Real
+	Definir estaAprobado Como Logico
+	Escribir "Ingrese la nota del primer parcial"
+	Leer Nota1
+	Escribir "ingrese la nota del segundo parcial"
+	Leer Nota2
+	Escribir "Ingrese la nota del parcial tres"
+	leer Nota3
+	
+	resultado <- Nota1 + Nota2 +Nota3
+	Escribir "Su nota final es: ", resultado
+	
+FinAlgoritmo
