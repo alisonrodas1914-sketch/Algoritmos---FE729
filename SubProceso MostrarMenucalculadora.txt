@@ -1,0 +1,78 @@
+SubProceso MostrarMenu
+	Escribir "============================="
+	Escribir "       Calculadora"
+	Escribir "============================="
+	Escribir "[1] Suma"
+	Escribir "[2] Resta"
+	Escribir "[3] Multiplicacion"
+	Escribir "[4] Division"
+FinSubProceso
+
+
+Funcion resultadoSuma <- Suma(a,b,c,d,e)
+	Definir resultadoSuma Como Entero
+	resultadoSuma<- a+b+c+d+e
+FinFuncion
+
+Funcion Resultadoresta <- resta(a,b)
+	Definir Resultadoresta Como Entero
+	Resultadoresta<- a-b 
+FinFuncion
+
+Funcion Resultadomultiplicacion <- multiplicacion(a,b,c)
+	Definir Resultadomultiplicacion Como Entero
+	Resultadomultiplicacion <- a*b*c
+FinFuncion
+
+Funcion Resultadodivision <- division(a, b)
+	Definir Resultadodivision Como Entero
+	Resultadodivision <- a/b 
+FinFuncion
+
+
+SubProceso MostrarResultado(Algunvalor)
+	Escribir "El resultado obtenido es: ", Algunvalor
+FinSubProceso
+
+Algoritmo Calculadora
+	Definir opccionMenu Como Entero
+	Definir Num1, Num2, Num3, Num4, Num5, resultado Como entero
+	MostrarMenu	
+	Escribir "Elija una de las opcciones"
+	Leer opccionMenu
+	
+	segun opccionMenu Hacer
+		1: 
+			Escribir "Opccion suma seleccionada"
+			Escribir "Ingrese las 5 cifras que desea operar: "
+			Leer Num1,Num2, Num3, Num4, Num5
+			resultado<- suma(Num1, Num2, Num3, Num4, Num5)
+			MostrarResultado(resultado)
+		2: 
+			Escribir "Opccion resta seleccionada"
+			Escribir "Ingrese las 2 cifras que desea operar:"
+			Leer Num1, Num2
+			resultado<- resta(num1,Num2)
+			MostrarResultado(resultado)
+		3: 
+			Escribir "Opccion multiplicacion seleccionada"
+			Escribir "Ingrese las 3 cifras que desea operar:"
+			Leer num1, Num2, Num3
+			resultado<- multiplicacion(num1, num2, Num3)
+			MostrarResultado(resultado)
+			
+		4: 
+			Escribir  "Opccion divicion seleccionada"
+			Escribir "Ingrese las 2 cifras que desea operar"
+			Leer num1, num2
+			resultado<- division(Num1, Num2)
+			MostrarResultado(resultado)
+			
+			
+			
+			
+		De Otro Modo:
+			Escribir "La opccion seleccionada es invalida"
+	FinSegun
+FinAlgoritmo
+
